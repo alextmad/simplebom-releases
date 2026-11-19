@@ -46,7 +46,7 @@ GitHub (for the update check) and Cloudflare (for reports) see your computer's i
 
 ## WebView2 and Windows
 
-SimpleBOM shows its windows with WebView2, a part of Windows made by Microsoft. WebView2 contacts Microsoft on its own to keep itself secure and up to date. SimpleBOM does not control this. Your Windows **Diagnostic data** setting limits the optional part of what is sent.
+SimpleBOM shows its windows with WebView2, a part of Windows made by Microsoft. WebView2 contacts Microsoft on its own to keep itself secure and up to date. SimpleBOM does not control this. Your Windows **Diagnostic data** setting limits the optional part of what is sent. SimpleBOM turns off the two parts it can: Microsoft's website check and the upload of crash reports.
 
 ## Nothing else
 
