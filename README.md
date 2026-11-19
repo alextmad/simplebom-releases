@@ -16,20 +16,19 @@ This page covers everything you need: install, your key, reporting a problem and
 
 ### Windows may warn you
 
-SimpleBOM is not signed with a publisher certificate, and Windows has not seen it before. So Windows may stop it the first time.
+SimpleBOM isn't signed yet, so Windows may warn you, and may do so again after an update.
 
-If you see **Windows protected your PC**:
+Your browser may warn that the file is not commonly downloaded. Choose to keep the file.
 
-1. Choose **More info**.
-2. Choose **Run anyway**.
+If you see **Windows protected your PC**, choose **More info**, then **Run anyway**.
 
-If Windows blocks SimpleBOM and offers no **Run anyway**, Smart App Control is on. It blocks SimpleBOM outright, with no exception for a single app, and the portable zip is blocked the same way. The only way past it is to turn Smart App Control off, in **Windows Security > App & browser control > Smart App Control settings**.
+If Windows blocks SimpleBOM and offers no **Run anyway**, Smart App Control is probably on (on a work PC, ask your IT team). It can't make an exception for one app, and the portable zip is treated the same. To use SimpleBOM, turn it off in **Windows Security > App & browser control > Smart App Control settings**. On an up-to-date Windows 11 you can turn it back on there later. If you are unsure, ask the person who invited you first.
 
-Think before you do. Microsoft's own pages disagree on whether you can turn Smart App Control back on later without resetting Windows, so assume you can't. If that worries you, ask the person who invited you before you change it.
+Sometimes there is no warning at all. That is fine.
 
 ## The portable zip
 
-If you would rather not install, download `SimpleBOM_..._x64_portable.zip` from the same release. It holds one file, `SimpleBOM.exe`. Unzip it anywhere and run it. Windows may show the same warnings as above.
+If you would rather not install, download `SimpleBOM_..._x64_portable.zip` from the same release. It holds one file, `SimpleBOM.exe`. Unzip it anywhere and run it. Windows may show the same warnings as above. A portable copy does not open `.sbom` files when you double-click them. Start SimpleBOM first, then use **File > Open**.
 
 A portable copy never updates itself. When a newer version is out, the top bar shows **Download {version}**. Pressing it opens the release page, where you download the new zip or the installer.
 
@@ -45,7 +44,7 @@ The key is yours alone. If a key is passed around, the developer can switch it o
 
 Issues are switched off here. Report from inside SimpleBOM with **Help > Report a problem** or the bug icon in the top bar. The dialog shows what will be sent before you press **Send**, and [PRIVACY.md](PRIVACY.md) explains it in full.
 
-If a report cannot be sent, SimpleBOM keeps it and tries again the next time it starts.
+If a report cannot be sent, SimpleBOM keeps it and tries again the next time it starts. If it is turned down, SimpleBOM tells you and keeps the saved copy.
 
 Security problems go through the private route in [SECURITY.md](SECURITY.md), never through a public report.
 
