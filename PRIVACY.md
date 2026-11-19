@@ -1,6 +1,6 @@
 # SimpleBOM privacy note
 
-SimpleBOM keeps your bills of materials on your own computer. It goes online for two things only: a problem report that you choose to send, and a check for a newer version.
+SimpleBOM keeps your bills of materials on your own computer. SimpleBOM itself goes online for two things only: a problem report that you choose to send, and a check for a newer version.
 
 ## Who reads it
 
@@ -16,7 +16,7 @@ A report can hold:
 
 - what you typed under **What happened?**
 - the name or email in the contact box. It starts with the name on your key, or with what you typed there last time. You can clear it.
-- SimpleBOM's log, ticked by default. File paths, which contain your Windows user name, and names you typed are replaced as the log is written. It records what SimpleBOM did, not what is in your projects.
+- SimpleBOM's log, ticked by default. It records what SimpleBOM did, not what is in your projects. SimpleBOM hides file paths and names in the log, but an unusual file or folder name can leave a word behind. You can open the log in the report dialog and read it before you send.
 - system info, ticked by default: the SimpleBOM version, the Windows version and the WebView2 version. No user name, computer name or folder.
 - the last error, ticked by default when one has just happened
 - screenshots, only the ones you add
@@ -25,7 +25,7 @@ A report can hold:
 
 Your key goes with the report so it can be checked. The key is not stored; only its short id is kept.
 
-If a report cannot be sent, SimpleBOM keeps it on your computer and tries again the next time it starts. Once it is sent, the copy on your computer is deleted.
+If a report cannot be sent, SimpleBOM keeps it on your computer and tries again the next time it starts. Once it is sent, the copy on your computer is deleted. If a report is turned down, for example because your key was switched off, SimpleBOM tells you, does not try again, and leaves the saved copy on your computer.
 
 Reports are stored privately, and only I can read them.
 
@@ -46,7 +46,7 @@ GitHub (for the update check) and Cloudflare (for reports) see your computer's i
 
 ## WebView2 and Windows
 
-SimpleBOM shows its windows with WebView2, a part of Windows. What Windows sends to Microsoft is up to your Windows **Diagnostic data** setting, which SimpleBOM does not control.
+SimpleBOM shows its windows with WebView2, a part of Windows made by Microsoft. WebView2 contacts Microsoft on its own to keep itself secure and up to date. SimpleBOM does not control this. Your Windows **Diagnostic data** setting limits the optional part of what is sent.
 
 ## Nothing else
 
